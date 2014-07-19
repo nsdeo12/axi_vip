@@ -1,0 +1,19 @@
+axi.svh {2 {vlog -work work -vopt -sv E:/VLSI_MATERIAL/Projects/AXI-SV-VIP/axi.svh
+QuestaSim vlog 10.2b Compiler 2013.05 May 16 2013
+-- Compiling module axi_slave
+-- Compiling interface axi_if
+-- Compiling package axi_svh_unit
+** Warning: byte_tx.sv(13): (vlog-2240) Treating stand-alone use of function 'print' as an implicit VOID cast.
+
+** Warning: byte_tx.sv(14): (vlog-2240) Treating stand-alone use of function 'print' as an implicit VOID cast.
+
+** Warning: (vlog-8491) axi_transaction.sv(73): 'new' must be used to assign to a dynamic array; 'new' is not legal with a queue.
+
+-- Compiling interface axi_if
+-- Compiling program axi_tb
+-- Compiling module axi_tb_top
+
+Top level modules:
+	axi_tb_top
+
+} {} {}}

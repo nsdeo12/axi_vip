@@ -1,0 +1,1051 @@
+# vsim +testname=1 -c axi_tb_top 
+# //  Questa Sim
+# //  Version 10.2b Unknown Platform May 16 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.axi_svh_unit(fast)
+# Loading work.axi_tb_top(fast)
+# Loading work.axi_if(fast)
+# Loading work.axi_tb(fast)
+# ** Warning: (vsim-PLI-3691) axi_tb.sv(5): Expected a system task, not a system function '$value$plusargs'.
+# 
+#         Region: /axi_tb_top/tb_inst
+# ** Warning: (vsim-8637) axi_env.sv(18): A modport ('bfm') should not be used in a hierarchical path.
+# 
+#         Region: /axi_svh_unit
+# ** Warning: (vsim-8637) axi_env.sv(20): A modport ('mon') should not be used in a hierarchical path.
+# 
+#         Region: /axi_svh_unit
+run -all
+# axi_tb_top: Initial block
+#                    0 : In ENV run
+# axi_transaction : new
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_transaction : new
+# Putting axi_tx in to mailbox
+# axi_monitor :: run
+# Printing axi_tx contents
+# tx_delay = 0000000000000007
+# wr_rd = 00000001
+# awaddr = 0c5fac5c
+# awid = 0
+# awlen = 0
+# awburst = 0
+# awsize = 5
+# wdata[          0] = a3207f8f
+# wstrb[          0] = 5
+# axi_transaction : new
+# axi_transaction : new
+######### WRITE BEGIN  #########
+# axi_monitor :: write address detected
+# axi_transaction : new
+# axi_transaction : new
+# axi_monitor :: write data detected
+#####  bvalid asserted  #####
+# axi_monitor :: write resp detected
+#############   Putting Write Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000001
+# awaddr = 0c5fac5c
+# awid = 0
+# awlen = 0
+# awburst = 0
+# awsize = 5
+# wdata[          0] = a3207f8f
+# wstrb[          0] = 5
+######### WRITE END  #########
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000008
+# wr_rd = 00000000
+# araddr = 5cb28787
+# arid = 4
+# arlen = 1
+# arburst = 0
+# arsize = 2
+# rdata[          0] = a2752b6b
+# rdata[          1] = 094a435b
+# axi_transaction : new
+# axi_transaction : new
+######### READ BEGIN  #########
+# arid =  4
+# axi_transaction : new
+# axi_transaction : new
+# rid =  4
+######### READ END  #########
+# rid =  4
+#############   Putting Read Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000000
+# araddr = 5cb28787
+# arid = 4
+# arlen = 1
+# arburst = 0
+# arsize = 2
+# rdata[          0] = 12153524
+# rdata[          1] = 8484d609
+# rresp[          0] = 0
+# rresp[          1] = 0
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000006
+# wr_rd = 00000000
+# araddr = cb6d0f40
+# arid = 7
+# arlen = 2
+# arburst = 0
+# arsize = 5
+# rdata[          0] = 2abbac03
+# rdata[          1] = 46ef7ef6
+# rdata[          2] = 2b3bf905
+# axi_transaction : new
+# axi_transaction : new
+######### READ BEGIN  #########
+# arid =  7
+# axi_transaction : new
+# axi_transaction : new
+# rid =  7
+# rid =  7
+######### READ END  #########
+# rid =  7
+#############   Putting Read Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000000
+# araddr = cb6d0f40
+# arid = 7
+# arlen = 2
+# arburst = 0
+# arsize = 5
+# rdata[          0] = b1f05663
+# rdata[          1] = 46df998d
+# rdata[          2] = b2c28465
+# rresp[          0] = 0
+# rresp[          1] = 0
+# rresp[          2] = 0
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000006
+# wr_rd = 00000000
+# araddr = e78894a5
+# arid = 3
+# arlen = 3
+# arburst = 0
+# arsize = 5
+# rdata[          0] = 5c999fc2
+# rdata[          1] = bdca2a2f
+# rdata[          2] = be3dabb0
+# rdata[          3] = 5b334f68
+# axi_transaction : new
+# axi_transaction : new
+######### READ BEGIN  #########
+# arid =  3
+# axi_transaction : new
+# axi_transaction : new
+# rid =  3
+# rid =  3
+# rid =  3
+######### READ END  #########
+# rid =  3
+#############   Putting Read Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000000
+# araddr = e78894a5
+# arid = 3
+# arlen = 3
+# arburst = 0
+# arsize = 5
+# rdata[          0] = 89375212
+# rdata[          1] = 06d7cd0d
+# rdata[          2] = 3b23f176
+# rdata[          3] = 1e8dcd3d
+# rresp[          0] = 0
+# rresp[          1] = 0
+# rresp[          2] = 0
+# rresp[          3] = 0
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000006
+# wr_rd = 00000001
+# awaddr = 5dc1152b
+# awid = 6
+# awlen = 4
+# awburst = 0
+# awsize = 3
+# wdata[          0] = 10afc177
+# wdata[          1] = 26eeab90
+# wdata[          2] = 48c1704e
+# wdata[          3] = b7cebbb5
+# wdata[          4] = a485337a
+# wstrb[          0] = a
+# wstrb[          1] = 0
+# wstrb[          2] = 3
+# wstrb[          3] = 4
+# wstrb[          4] = 9
+# axi_transaction : new
+# axi_transaction : new
+######### WRITE BEGIN  #########
+# axi_monitor :: write address detected
+# axi_transaction : new
+# axi_transaction : new
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+#####  bvalid asserted  #####
+# axi_monitor :: write resp detected
+#############   Putting Write Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000001
+# awaddr = 5dc1152b
+# awid = 6
+# awlen = 4
+# awburst = 0
+# awsize = 3
+# wdata[          0] = 10afc177
+# wdata[          1] = 26eeab90
+# wdata[          2] = 48c1704e
+# wdata[          3] = b7cebbb5
+# wdata[          4] = a485337a
+# wstrb[          0] = a
+# wstrb[          1] = 0
+# wstrb[          2] = 3
+# wstrb[          3] = 4
+# wstrb[          4] = 9
+######### WRITE END  #########
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000005
+# wr_rd = 00000001
+# awaddr = 06384476
+# awid = 9
+# awlen = 5
+# awburst = 0
+# awsize = 3
+# wdata[          0] = f6b8d9c2
+# wdata[          1] = 5f29c28e
+# wdata[          2] = 7afb25ea
+# wdata[          3] = 7c22ed98
+# wdata[          4] = 30be7175
+# wdata[          5] = 6a2b931a
+# wstrb[          0] = c
+# wstrb[          1] = 2
+# wstrb[          2] = 5
+# wstrb[          3] = 5
+# wstrb[          4] = 1
+# wstrb[          5] = 4
+# axi_transaction : new
+# axi_transaction : new
+######### WRITE BEGIN  #########
+# axi_monitor :: write address detected
+# axi_transaction : new
+# axi_transaction : new
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+#####  bvalid asserted  #####
+# axi_monitor :: write resp detected
+#############   Putting Write Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000001
+# awaddr = 06384476
+# awid = 9
+# awlen = 5
+# awburst = 0
+# awsize = 3
+# wdata[          0] = f6b8d9c2
+# wdata[          1] = 5f29c28e
+# wdata[          2] = 7afb25ea
+# wdata[          3] = 7c22ed98
+# wdata[          4] = 30be7175
+# wdata[          5] = 6a2b931a
+# wstrb[          0] = c
+# wstrb[          1] = 2
+# wstrb[          2] = 5
+# wstrb[          3] = 5
+# wstrb[          4] = 1
+# wstrb[          5] = 4
+######### WRITE END  #########
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000004
+# wr_rd = 00000001
+# awaddr = ed58bd07
+# awid = 4
+# awlen = 6
+# awburst = 0
+# awsize = 2
+# wdata[          0] = d93244d9
+# wdata[          1] = 0154fd14
+# wdata[          2] = 99e3de22
+# wdata[          3] = ec5ecb2a
+# wdata[          4] = 0a8c5659
+# wdata[          5] = 3a94780a
+# wdata[          6] = b7155812
+# wstrb[          0] = 6
+# wstrb[          1] = 5
+# wstrb[          2] = 0
+# wstrb[          3] = c
+# wstrb[          4] = a
+# wstrb[          5] = 3
+# wstrb[          6] = 8
+# axi_transaction : new
+# axi_transaction : new
+######### WRITE BEGIN  #########
+# axi_monitor :: write address detected
+# axi_transaction : new
+# axi_transaction : new
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+#####  bvalid asserted  #####
+# axi_monitor :: write resp detected
+#############   Putting Write Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000001
+# awaddr = ed58bd07
+# awid = 4
+# awlen = 6
+# awburst = 0
+# awsize = 2
+# wdata[          0] = d93244d9
+# wdata[          1] = 0154fd14
+# wdata[          2] = 99e3de22
+# wdata[          3] = ec5ecb2a
+# wdata[          4] = 0a8c5659
+# wdata[          5] = 3a94780a
+# wdata[          6] = b7155812
+# wstrb[          0] = 6
+# wstrb[          1] = 5
+# wstrb[          2] = 0
+# wstrb[          3] = c
+# wstrb[          4] = a
+# wstrb[          5] = 3
+# wstrb[          6] = 8
+######### WRITE END  #########
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000006
+# wr_rd = 00000000
+# araddr = 89696f49
+# arid = 6
+# arlen = 7
+# arburst = 0
+# arsize = 3
+# rdata[          0] = f9493173
+# rdata[          1] = 5d26cc74
+# rdata[          2] = f6a29078
+# rdata[          3] = ed391ab7
+# rdata[          4] = bbdb22a1
+# rdata[          5] = 7e6a3640
+# rdata[          6] = 78016764
+# rdata[          7] = 314a730b
+# axi_transaction : new
+# axi_transaction : new
+######### READ BEGIN  #########
+# arid =  6
+# axi_transaction : new
+# axi_transaction : new
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+######### READ END  #########
+# rid =  6
+#############   Putting Read Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000000
+# araddr = 89696f49
+# arid = 6
+# arlen = 7
+# arburst = 0
+# arsize = 3
+# rdata[          0] = 76d457ed
+# rdata[          1] = 7cfde9f9
+# rdata[          2] = e33724c6
+# rdata[          3] = e2f784c5
+# rdata[          4] = d513d2aa
+# rdata[          5] = 72aff7e5
+# rdata[          6] = bbd27277
+# rdata[          7] = 8932d612
+# rresp[          0] = 0
+# rresp[          1] = 0
+# rresp[          2] = 0
+# rresp[          3] = 0
+# rresp[          4] = 0
+# rresp[          5] = 0
+# rresp[          6] = 0
+# rresp[          7] = 0
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000005
+# wr_rd = 00000000
+# araddr = c48a6725
+# arid = 9
+# arlen = 8
+# arburst = 0
+# arsize = 2
+# rdata[          0] = 395a9375
+# rdata[          1] = 48b14365
+# rdata[          2] = 3644d7d9
+# rdata[          3] = 9708529f
+# rdata[          4] = 17a29938
+# rdata[          5] = ec57860d
+# rdata[          6] = 89e5b2b6
+# rdata[          7] = cad7bc30
+# rdata[          8] = 746008ed
+# axi_transaction : new
+# axi_transaction : new
+######### READ BEGIN  #########
+# arid =  9
+# axi_transaction : new
+# axi_transaction : new
+# rid =  9
+# rid =  9
+# rid =  9
+# rid =  9
+# rid =  9
+# rid =  9
+# rid =  9
+# rid =  9
+######### READ END  #########
+# rid =  9
+#############   Putting Read Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000000
+# araddr = c48a6725
+# arid = 9
+# arlen = 8
+# arburst = 0
+# arsize = 2
+# rdata[          0] = 47ecdb8f
+# rdata[          1] = e77696ce
+# rdata[          2] = f4007ae8
+# rdata[          3] = e2ca4ec5
+# rdata[          4] = 2e58495c
+# rdata[          5] = de8e28bd
+# rdata[          6] = 96ab582d
+# rdata[          7] = b2a72665
+# rdata[          8] = b1ef6263
+# rresp[          0] = 0
+# rresp[          1] = 0
+# rresp[          2] = 0
+# rresp[          3] = 0
+# rresp[          4] = 0
+# rresp[          5] = 0
+# rresp[          6] = 0
+# rresp[          7] = 0
+# rresp[          8] = 0
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000009
+# wr_rd = 00000000
+# araddr = 57f18820
+# arid = 6
+# arlen = 9
+# arburst = 0
+# arsize = 6
+# rdata[          0] = 4e305837
+# rdata[          1] = 6425c243
+# rdata[          2] = 34bd3a43
+# rdata[          3] = 62bc846c
+# rdata[          4] = db9b45c2
+# rdata[          5] = 28b74775
+# rdata[          6] = 68c728f8
+# rdata[          7] = dacea560
+# rdata[          8] = d9866e56
+# rdata[          9] = bf8caa6c
+# axi_transaction : new
+# axi_transaction : new
+######### READ BEGIN  #########
+# arid =  6
+# axi_transaction : new
+# axi_transaction : new
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+# rid =  6
+######### READ END  #########
+# rid =  6
+#############   Putting Read Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000000
+# araddr = 57f18820
+# arid = 6
+# arlen = 9
+# arburst = 0
+# arsize = 6
+# rdata[          0] = 0573870a
+# rdata[          1] = 10642120
+# rdata[          2] = 557845aa
+# rdata[          3] = cecccc9d
+# rdata[          4] = cb203e96
+# rdata[          5] = 8983b813
+# rdata[          6] = 86bc380d
+# rdata[          7] = a9a7d653
+# rdata[          8] = 359fdd6b
+# rdata[          9] = eaa62ad5
+# rresp[          0] = 0
+# rresp[          1] = 0
+# rresp[          2] = 0
+# rresp[          3] = 0
+# rresp[          4] = 0
+# rresp[          5] = 0
+# rresp[          6] = 0
+# rresp[          7] = 0
+# rresp[          8] = 0
+# rresp[          9] = 0
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000007
+# wr_rd = 00000000
+# araddr = 508223d6
+# arid = 2
+# arlen = a
+# arburst = 0
+# arsize = 3
+# rdata[          0] = 2505bb01
+# rdata[          1] = 8766d55a
+# rdata[          2] = 38220ac4
+# rdata[          3] = 5108716d
+# rdata[          4] = 03250608
+# rdata[          5] = 02c6d108
+# rdata[          6] = 075fef67
+# rdata[          7] = eff69554
+# rdata[          8] = 4cc7da5c
+# rdata[          9] = 2dcb0311
+# rdata[         10] = 03e5e4d8
+# axi_transaction : new
+# axi_transaction : new
+######### READ BEGIN  #########
+# arid =  2
+# axi_transaction : new
+# axi_transaction : new
+# rid =  2
+# rid =  2
+# rid =  2
+# rid =  2
+# rid =  2
+# rid =  2
+# rid =  2
+# rid =  2
+# rid =  2
+# rid =  2
+######### READ END  #########
+# rid =  2
+#############   Putting Read Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000000
+# araddr = 508223d6
+# arid = 2
+# arlen = a
+# arburst = 0
+# arsize = 3
+# rdata[          0] = 81174a02
+# rdata[          1] = 0effe91d
+# rdata[          2] = e7c572cf
+# rdata[          3] = 11844923
+# rdata[          4] = 0509650a
+# rdata[          5] = e5730aca
+# rdata[          6] = 9e314c3c
+# rdata[          7] = 7968bdf2
+# rdata[          8] = 452e618a
+# rdata[          9] = 20c4b341
+# rdata[         10] = ec4b34d8
+# rresp[          0] = 0
+# rresp[          1] = 0
+# rresp[          2] = 0
+# rresp[          3] = 0
+# rresp[          4] = 0
+# rresp[          5] = 0
+# rresp[          6] = 0
+# rresp[          7] = 0
+# rresp[          8] = 0
+# rresp[          9] = 0
+# rresp[         10] = 0
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000005
+# wr_rd = 00000001
+# awaddr = bc82f762
+# awid = 3
+# awlen = b
+# awburst = 0
+# awsize = 2
+# wdata[          0] = 859f3379
+# wdata[          1] = 02e27faf
+# wdata[          2] = 6b9ef7d1
+# wdata[          3] = 1e4c04f4
+# wdata[          4] = 13a39b93
+# wdata[          5] = 02894584
+# wdata[          6] = 02898c8d
+# wdata[          7] = bb0c2638
+# wdata[          8] = 372b2cc7
+# wdata[          9] = d9ad6ed3
+# wdata[         10] = 82a3300f
+# wdata[         11] = 19770669
+# wstrb[          0] = 9
+# wstrb[          1] = f
+# wstrb[          2] = 1
+# wstrb[          3] = 7
+# wstrb[          4] = 2
+# wstrb[          5] = c
+# wstrb[          6] = b
+# wstrb[          7] = 6
+# wstrb[          8] = 9
+# wstrb[          9] = 0
+# wstrb[         10] = 3
+# wstrb[         11] = 4
+# axi_transaction : new
+# axi_transaction : new
+######### WRITE BEGIN  #########
+# axi_monitor :: write address detected
+# axi_transaction : new
+# axi_transaction : new
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+#####  bvalid asserted  #####
+# axi_monitor :: write resp detected
+#############   Putting Write Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000001
+# awaddr = bc82f762
+# awid = 3
+# awlen = b
+# awburst = 0
+# awsize = 2
+# wdata[          0] = 859f3379
+# wdata[          1] = 02e27faf
+# wdata[          2] = 6b9ef7d1
+# wdata[          3] = 1e4c04f4
+# wdata[          4] = 13a39b93
+# wdata[          5] = 02894584
+# wdata[          6] = 02898c8d
+# wdata[          7] = bb0c2638
+# wdata[          8] = 372b2cc7
+# wdata[          9] = d9ad6ed3
+# wdata[         10] = 82a3300f
+# wdata[         11] = 19770669
+# wstrb[          0] = 9
+# wstrb[          1] = f
+# wstrb[          2] = 1
+# wstrb[          3] = 7
+# wstrb[          4] = 2
+# wstrb[          5] = c
+# wstrb[          6] = b
+# wstrb[          7] = 6
+# wstrb[          8] = 9
+# wstrb[          9] = 0
+# wstrb[         10] = 3
+# wstrb[         11] = 4
+######### WRITE END  #########
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000006
+# wr_rd = 00000001
+# awaddr = 72b442dc
+# awid = 1
+# awlen = c
+# awburst = 0
+# awsize = 0
+# wdata[          0] = e74c0a22
+# wdata[          1] = 7c3ed451
+# wdata[          2] = 739a01b7
+# wdata[          3] = 9f753a61
+# wdata[          4] = 207bc4a2
+# wdata[          5] = 1dd0857a
+# wdata[          6] = 0a1e1eb8
+# wdata[          7] = d10ed0e3
+# wdata[          8] = ae0c3855
+# wdata[          9] = db72d5f4
+# wdata[         10] = 95b56e9f
+# wdata[         11] = faa0c14d
+# wdata[         12] = 331f3965
+# wstrb[          0] = 8
+# wstrb[          1] = d
+# wstrb[          2] = 4
+# wstrb[          3] = a
+# wstrb[          4] = c
+# wstrb[          5] = 6
+# wstrb[          6] = a
+# wstrb[          7] = 0
+# wstrb[          8] = e
+# wstrb[          9] = d
+# wstrb[         10] = 6
+# wstrb[         11] = 9
+# wstrb[         12] = 0
+# axi_transaction : new
+# axi_transaction : new
+######### WRITE BEGIN  #########
+# axi_monitor :: write address detected
+# axi_transaction : new
+# axi_transaction : new
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+#####  bvalid asserted  #####
+# axi_monitor :: write resp detected
+#############   Putting Write Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000001
+# awaddr = 72b442dc
+# awid = 1
+# awlen = c
+# awburst = 0
+# awsize = 0
+# wdata[          0] = e74c0a22
+# wdata[          1] = 7c3ed451
+# wdata[          2] = 739a01b7
+# wdata[          3] = 9f753a61
+# wdata[          4] = 207bc4a2
+# wdata[          5] = 1dd0857a
+# wdata[          6] = 0a1e1eb8
+# wdata[          7] = d10ed0e3
+# wdata[          8] = ae0c3855
+# wdata[          9] = db72d5f4
+# wdata[         10] = 95b56e9f
+# wdata[         11] = faa0c14d
+# wdata[         12] = 331f3965
+# wstrb[          0] = 8
+# wstrb[          1] = d
+# wstrb[          2] = 4
+# wstrb[          3] = a
+# wstrb[          4] = c
+# wstrb[          5] = 6
+# wstrb[          6] = a
+# wstrb[          7] = 0
+# wstrb[          8] = e
+# wstrb[          9] = d
+# wstrb[         10] = 6
+# wstrb[         11] = 9
+# wstrb[         12] = 0
+######### WRITE END  #########
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000008
+# wr_rd = 00000001
+# awaddr = 62c2d0ad
+# awid = 5
+# awlen = d
+# awburst = 0
+# awsize = 1
+# wdata[          0] = 6bf111c8
+# wdata[          1] = 967cd28b
+# wdata[          2] = 117b7b81
+# wdata[          3] = 425f8995
+# wdata[          4] = 39cb9946
+# wdata[          5] = 8c3dcd20
+# wdata[          6] = ea47585e
+# wdata[          7] = 2ad360e3
+# wdata[          8] = 56076713
+# wdata[          9] = 18bdda23
+# wdata[         10] = 71c620e9
+# wdata[         11] = 9022ff4f
+# wdata[         12] = 9ba83861
+# wdata[         13] = 09712c5a
+# wstrb[          0] = 4
+# wstrb[          1] = 8
+# wstrb[          2] = 7
+# wstrb[          3] = c
+# wstrb[          4] = 3
+# wstrb[          5] = 4
+# wstrb[          6] = a
+# wstrb[          7] = 0
+# wstrb[          8] = c
+# wstrb[          9] = 8
+# wstrb[         10] = 5
+# wstrb[         11] = b
+# wstrb[         12] = c
+# wstrb[         13] = e
+# axi_transaction : new
+# axi_transaction : new
+######### WRITE BEGIN  #########
+# axi_monitor :: write address detected
+# axi_transaction : new
+# axi_transaction : new
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+#####  bvalid asserted  #####
+# axi_monitor :: write resp detected
+#############   Putting Write Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000001
+# awaddr = 62c2d0ad
+# awid = 5
+# awlen = d
+# awburst = 0
+# awsize = 1
+# wdata[          0] = 6bf111c8
+# wdata[          1] = 967cd28b
+# wdata[          2] = 117b7b81
+# wdata[          3] = 425f8995
+# wdata[          4] = 39cb9946
+# wdata[          5] = 8c3dcd20
+# wdata[          6] = ea47585e
+# wdata[          7] = 2ad360e3
+# wdata[          8] = 56076713
+# wdata[          9] = 18bdda23
+# wdata[         10] = 71c620e9
+# wdata[         11] = 9022ff4f
+# wdata[         12] = 9ba83861
+# wdata[         13] = 09712c5a
+# wstrb[          0] = 4
+# wstrb[          1] = 8
+# wstrb[          2] = 7
+# wstrb[          3] = c
+# wstrb[          4] = 3
+# wstrb[          5] = 4
+# wstrb[          6] = a
+# wstrb[          7] = 0
+# wstrb[          8] = c
+# wstrb[          9] = 8
+# wstrb[         10] = 5
+# wstrb[         11] = b
+# wstrb[         12] = c
+# wstrb[         13] = e
+######### WRITE END  #########
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000009
+# wr_rd = 00000001
+# awaddr = e489f9a2
+# awid = 0
+# awlen = e
+# awburst = 0
+# awsize = 6
+# wdata[          0] = ffee23af
+# wdata[          1] = fa52046f
+# wdata[          2] = 1b803591
+# wdata[          3] = 3a24a31a
+# wdata[          4] = 34965413
+# wdata[          5] = a6fe981a
+# wdata[          6] = 6b7c5bc8
+# wdata[          7] = 071e6a29
+# wdata[          8] = 62d6a731
+# wdata[          9] = 3aab3f3c
+# wdata[         10] = a16545ea
+# wdata[         11] = c61de992
+# wdata[         12] = 235a729c
+# wdata[         13] = 3e412781
+# wdata[         14] = f1ff5c97
+# wstrb[          0] = c
+# wstrb[          1] = 7
+# wstrb[          2] = 0
+# wstrb[          3] = 3
+# wstrb[          4] = 8
+# wstrb[          5] = 2
+# wstrb[          6] = 0
+# wstrb[          7] = 3
+# wstrb[          8] = 1
+# wstrb[          9] = 6
+# wstrb[         10] = 7
+# wstrb[         11] = a
+# wstrb[         12] = 4
+# wstrb[         13] = 3
+# wstrb[         14] = b
+# axi_transaction : new
+# axi_transaction : new
+######### WRITE BEGIN  #########
+# axi_monitor :: write address detected
+# axi_transaction : new
+# axi_transaction : new
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+# axi_monitor :: write data detected
+#####  bvalid asserted  #####
+# axi_monitor :: write resp detected
+#############   Putting Write Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000001
+# awaddr = e489f9a2
+# awid = 0
+# awlen = e
+# awburst = 0
+# awsize = 6
+# wdata[          0] = ffee23af
+# wdata[          1] = fa52046f
+# wdata[          2] = 1b803591
+# wdata[          3] = 3a24a31a
+# wdata[          4] = 34965413
+# wdata[          5] = a6fe981a
+# wdata[          6] = 6b7c5bc8
+# wdata[          7] = 071e6a29
+# wdata[          8] = 62d6a731
+# wdata[          9] = 3aab3f3c
+# wdata[         10] = a16545ea
+# wdata[         11] = c61de992
+# wdata[         12] = 235a729c
+# wdata[         13] = 3e412781
+# wdata[         14] = f1ff5c97
+# wstrb[          0] = c
+# wstrb[          1] = 7
+# wstrb[          2] = 0
+# wstrb[          3] = 3
+# wstrb[          4] = 8
+# wstrb[          5] = 2
+# wstrb[          6] = 0
+# wstrb[          7] = 3
+# wstrb[          8] = 1
+# wstrb[          9] = 6
+# wstrb[         10] = 7
+# wstrb[         11] = a
+# wstrb[         12] = 4
+# wstrb[         13] = 3
+# wstrb[         14] = b
+######### WRITE END  #########
+# axi_transaction : new
+# Printing axi_tx contents
+# tx_delay = 0000000000000007
+# wr_rd = 00000000
+# araddr = 4941cf7a
+# arid = 6
+# arlen = f
+# arburst = 0
+# arsize = 0
+# rdata[          0] = 3ba6b1cf
+# rdata[          1] = bbf889c9
+# rdata[          2] = 97ffcef0
+# rdata[          3] = 4f1cfe18
+# rdata[          4] = ce3f78ae
+# rdata[          5] = 6bc2bd5b
+# rdata[          6] = e84cf934
+# rdata[          7] = 11d73216
+# rdata[          8] = 19db6518
+# rdata[          9] = 88e219e6
+# rdata[         10] = 0665852f
+# rdata[         11] = 6df3564b
+# rdata[         12] = 8c22b97d
+# rdata[         13] = d34f24f8
+# rdata[         14] = e88f8db2
+# rdata[         15] = 2b6288b4
+# axi_transaction : new
+# axi_transaction : new
+######### READ BEGIN  #########
+# arid =  6
+# axi_transaction : new
+# axi_transaction : new
+# rid =  6
+#############   Putting Read Tx in to Mailbox  #################
+# Printing axi_tx contents
+# tx_delay = xxxxxxxxxxxxxxxx
+# wr_rd = 00000000
+# araddr = 4941cf7a
+# arid = 6
+# arlen = f
+# arburst = 0
+# arsize = 0
+# rdata[          0] = 3c20f378
+# rresp[          0] = 0
+# ** Note: $finish    : axi_tb_top.sv(59)
+#    Time: 10005 ns  Iteration: 0  Instance: /axi_tb_top
+# Test completed

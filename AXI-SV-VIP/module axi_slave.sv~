@@ -1,0 +1,43 @@
+module axi_slave(
+  input  awid,
+  input  awaddr,
+  input  awlen,
+  input  awsize,
+  input  awburst,
+  input  awlock,
+  input  awcache,
+  input  awprot,
+  input  awvalid,
+  output awready,
+
+  input  wid,
+  input  wdata,
+  input  wstrb,
+  input  wlast,
+  input  wvalid,
+  output   wready,
+
+  output   bid,
+  output   bresp,
+  output   bvalid,
+  input   bready,
+
+  input   arid,
+  input   araddr,
+  input   arlen,
+  input   arsize,
+  input   arburst,
+  input   arlock,
+  input   arcache,
+  input   arprot,
+  input   arvalid,
+  output   arready,
+
+  input  rid,
+  output   rdata,
+  output   rlast,
+  output   rvalid,
+  input   rready,
+  output   rresp
+);
+endmodule

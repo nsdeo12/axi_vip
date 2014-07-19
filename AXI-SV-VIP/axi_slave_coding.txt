@@ -1,0 +1,38 @@
+1. module declaration
+   - Name of module
+   - Ports : Direction, size, name, (reg kind of ports)
+
+2. Local variable declaration
+   - awlen_t
+   - awaddr_t
+   - awsize_t
+   - awburst_t
+   - awprot_t
+   - awcache_t
+   - awid_t
+   - byte mem[int]; //asscoaitve array
+
+3. FUnctionality
+ i. Handling write address phase
+    - Who does this phase?  Master
+    - what slave supposed to do?
+         o Wait for awvalid == 1
+         o store the write address channel information(awaddr, awlen...) to local variables
+         o Give acknoledgement(awready) to the BFM(master)
+         o Write address phase will be done
+ ii. Handling write data phase
+    - Who does this phase?  Master
+    - what slave supposed to do?
+         o Wait for wvalid == 1
+         o store the write data to Memory declared above
+         o Give acknoledgement(wready) to the BFM(master)
+         o Write data one transfer phase will be done
+ iii. Handling write resp phase
+    - Who does this phase?  Slave
+    - what slave supposed to do?
+         o when it is supposed to do? When write data transfers complete(wlast will tell this)
+         o Drive bresp, bid, bvalid = 1
+         o wait for bready == 1
+         o indicates completion of write resp phase, hence write transaction
+ iv. Handling read address phase
+ v. Handling read data phase
